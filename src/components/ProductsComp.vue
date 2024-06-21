@@ -9,8 +9,8 @@
       <p>R{{ product.price }}</p>
       <p>{{ product.description }}</p>
       <p :class="{
-          inStock: product.status.toLowerCase() == 'in-stock',
-          outOfStock: product.status.toLowerCase() == 'out-of-stock'
+        inStock: product.status.toLowerCase() == 'in-stock',
+        outOfStock: product.status.toLowerCase() == 'out-of-stock'
       }">{{ product.status }}</p>
     </template>
   </CardComp>
@@ -75,11 +75,11 @@ export default {
   width: 7rem;
 }
 
-.inStock{
+.inStock {
   border: 2px solid green;
 }
 
-.outOfStock{
+.outOfStock {
   border: 2px solid red;
 }
 </style>
